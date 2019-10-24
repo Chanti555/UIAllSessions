@@ -1,0 +1,79 @@
+GIT:
+
+==
+
+Git is an indispensable part of modern software development. 
+It is a version control system which can be thought of as an extremely powerful version of track changes 
+in Your Project .
+
+With git, 
+1.you can collaborate with other developers, 
+2.track all your work via commits,
+3.revert to any previous version of your code even if you accidentally delete something important.
+
+
+
+
+
+
+Installation & setup:
+=================
+1.Install Git On Windows.
+Step3:
+3.1Once installed, we need to do a one-time system setup to configure it 
+by declaring the name and email address you want associated with all your Git commits.
+
+3.2.Within the command line console type the following two lines. 
+3.3.Open cmd prompt
+
+c:\> 	git 	config --global user.name "Your Name"
+c:\>  	git 	config --global user.email "yourname@email.com"
+
+3.4.You can always change these configs later if you desire by retyping the same commands 
+with a new name or email address.
+
+
+
+
+
+Configuring ur project into git:
+==========================
+Step4:Open ur project folder after testing it
+Step5:Open cmd prompt in ur project folder
+Step6:
+The first step is to initialize (or add) git to our repository.
+	git 	init
+Step7:
+If you then type git status you?ll see a list of changes since the last git commit. 
+Since this is our first commit, this list is all of our changes so far.
+	git status
+Step8:
+We next want to add all changes by using the command add -A and then commit the 
+changes along with a message describing what has changed.
+	git add -A
+	git commit -m "Ur Commit Comment"
+Step9:
+	SignIn into ur github account from Browser
+Step10:	
+	Click new in Repositories
+Step11:
+	name=UrAppName
+	Click on create Repository
+Step12:Goto "push an existing repository from the command line" and copy the   two commands 
+& paste  into ur command prompt
+Command1:git remote add origin https://github.com/UrName/UrAppName.git
+Command2:git push -u origin master
+Step13:Goto homepage in github site & track ur project
+Step14:Next time if u modified code then repeat Step5,6,7,8 & Step12 command2
+	
+
+
+
+
+
+
+
+
+
+
+
