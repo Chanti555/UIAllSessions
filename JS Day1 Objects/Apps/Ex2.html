@@ -1,0 +1,17 @@
+<html>
+<body>
+    <script>
+        var e1={'id':101,'name':'Ajay','salary':45000.50};
+        document.write(JSON.stringify(e1)+'<hr>');
+        //1.Adding new key & value pairs
+        e1.address='Hyd';
+        document.write(JSON.stringify(e1)+'<hr>');
+        //2.Updating existing key & value pair
+        e1.name='Ajay Kumar';
+        document.write(JSON.stringify(e1)+'<hr>');
+        //3.Deleting existing key & value pair
+        delete e1.salary;
+        document.write(JSON.stringify(e1)+'<hr>');
+    </script>
+</body>
+</html>

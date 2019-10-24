@@ -1,0 +1,29 @@
+<html>
+<body>
+    <script>
+        //approach1
+        var x={id:101,name:'Ajay',salary:45000.50};
+        console.log(x);
+         //approach2
+        var y=new Object();
+        y.id=102;
+        y.name='sanjay';
+        y.salary=75000.75;
+        console.log(y);
+         //approach3
+        function Emp(id,name,salary)
+        {
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+        }
+        var z=new Emp(103,'Deepak',85000.85);
+        console.log(z);
+
+        document.write(JSON.stringify(x));
+        document.write(JSON.stringify(y));
+        document.write(JSON.stringify(z));
+
+    </script>
+</body>
+</html>

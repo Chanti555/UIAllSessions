@@ -1,0 +1,64 @@
+Object:
+======
+Def:	If user want to store data in key,value pairs then we use object.
+JSON:   object representation in JAVASCRIPT is called as JSON.
+syntax:
+		{	Keys		:	Value		}
+Ex:
+		
+	{		"id"		: 	5011,
+    		"name"		: 	"Ramesh Kumar",
+   		 	"username"	: 	"ram",
+    		"email"		: 	"ram@gmial.com",
+	}
+
+Note:
+-------
+	Object is mutable(CAN BE MODIFY) type
+
+stringify():
+===========
+	Used to convert object into JSON format
+
+Preparation ways:
+-----------------
+We can prepare strings in 3 ways
+
+	1.Using {,} operators		
+	2.Using new keyword	
+	3.Using constructor function
+
+Refer :Ex14.html
+
+Better syntax to create an object:
+=================================
+	var objectname={key1:value1,key2:value2,......};
+
+Refer Ex1.html
+
+Operation on Objects:				Refer :Ex15.html
+==================
+1.Adding new key & value pairs
+2.Updating existing key & value pair
+3.Deleting existing key & value pair
+	
+
+4.Accessing Objects key values	(****)		Refer :Ex16.html
+
+	Object elements can be accessed by 2 ways
+		1.using . operator
+		2.using [] operators
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

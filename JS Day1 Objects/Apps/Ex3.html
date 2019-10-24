@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+                Accessing Objects key values
+        </title>
+    </head>
+<body>
+    <script>
+        //Approach1: using . operator
+        var e1={'id':101,'name':'Ajay','salary':45000.50};
+        document.write(JSON.stringify(e1)+'<hr>');
+        document.write(e1.id+'<hr>');
+        document.write(e1.name+'<hr>');
+        document.write(e1.salary+'<hr>');
+        //Approach2: using [] operators
+        var e2={'id':501,'first name':'James','last name':'Gosling'};
+        document.write(e2['id']+'<hr>');
+        document.write(e2['first name']+'<hr>');
+        document.write(e2['last name']+'<hr>');
+    </script>
+</body>
+</html>
