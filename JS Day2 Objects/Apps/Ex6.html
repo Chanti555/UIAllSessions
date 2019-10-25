@@ -1,0 +1,40 @@
+<html>
+<body>
+    <script>
+   document.write('<br>--1.Individual objects---<br>')
+   var emp1={id:1,name:'Ajay',salary:45000,address:'Hyd'};
+   var emp2={id:2,name:'Sai',salary:35000,address:'Sec'};
+   var emp3={id:3,name:'Varun',salary:55000,address:'Knr'};
+    document.write(JSON.stringify(emp1)) ;
+    document.write(JSON.stringify(emp2)) ;
+    document.write(JSON.stringify(emp3)) ;
+    
+    document.write('<br>--2.Array of objects---<br>')
+    var employee=[
+    {id:1,name:'Ajay',salary:45000,address:'Hyd'},
+    {id:2,name:'Sai',salary:35000,address:'Sec'},
+    {id:3,name:'Varun',salary:55000,address:'Knr'}
+    ];
+    for(var i=0;i<employee.length;i++)
+    {
+        document.write(JSON.stringify(employee[i])+'<hr>') ;
+    }
+    console.log(employee);
+    document.write('<br>--object1 data---<br>')
+    document.write(employee[0].id)
+    document.write(employee[0].name)
+    document.write(employee[0].salary)
+    document.write(employee[0].address)
+    document.write('<br>--accessing all objects data---<br>')
+    var data='';
+    for(var i=0;i<employee.length;i++)
+    {
+        data=data+employee[i].id+',';
+        data=data+employee[i].name+',';
+        data=data+employee[i].salary+',';
+        data=data+employee[i].address+'<hr>';
+    }
+    document.write(data);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+    <script>
+        var student1={id:101,name:'Teja'};
+        //Checking key existatnce
+        document.write('id' in student1);
+        document.write('name' in student1);
+        document.write('age' in student1);
+        if('address' in student1)
+        {
+            alert('address key is alredy exist');
+        }
+        else
+        {
+            student1.address='Hyd';
+            alert(JSON.stringify(student1));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<body>
+    <script>
+    //Array inside Objects
+    var person=
+    {
+        mailid:'ajay@gmail.com',
+        name:'Ajay',
+        hobbies:['Singing','Swimming'],
+        languages:['Telugu','Hindi','English'],
+        'fav food items':['Biryani','IceCream'],
+       };
+    document.write(JSON.stringify(person)+'<hr>')
+    document.write(person.mailid+'<hr>')
+    document.write(person.name+'<hr>')
+    document.write(person.hobbies[0]+'<hr>')
+    document.write(person.hobbies[1]+'<hr>')
+    document.write(person.languages[0]+'<hr>')
+    document.write(person.languages[1]+'<hr>')
+    document.write(person.languages[2]+'<hr>')
+    document.write(person['fav food items'][0]+'<hr>')
+    document.write(person['fav food items'][1]+'<hr>')
+    console.log(person)
+    </script>
+</body>
+</html>

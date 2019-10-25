@@ -1,0 +1,119 @@
+topic1:object creation using property value shorthand
+-------
+
+Refer:Ex1.html
+
+topic2:Checking key existatnce
+-------
+	Here we use "in" keyword to checking key
+
+Refer:Ex2.html
+
+topic3:copying one object into another object
+---------
+	Here we use "assign()" function to copy one object into another
+
+	syntax:
+		Object.assign(targetob,sourceob1,sourceob2,....);
+Note:
+=====
+	1.Object cannot allow duplicate keys
+	2.If user try to store duplicate keys, then old values are replaced by new values
+	3.ENTRY={KEY,VALUE}
+
+Refer:Ex3.html
+
+
+topic4:Iterating object's key & value pairs
+---------
+To iterate object key & value pairs we use a special loop i.e "for .. in" loop
+
+"for .. in" loop syntax:
+========================
+
+	for(	variablename	in	objectname)
+	{
+		alert(variablename);
+	}
+
+Here "variablename" is poiting to the keys
+
+Refer:Ex4.html
+
+
+
+
+
+topic5:Object functions
+----------
+	
+1.keys()		:returns all keys
+2.values()		:returns all values
+3.entries()		:returns all key & value pairs
+
+Refer:Ex5.html
+____________________________________________________________________
+topic6:
+
+Single Object Vs Array of Objects:
+============================
+Single Object :
+		var student={'id':501,'name':'raju'};
+Array of Objects:
+		var students=	[
+					{'id':501,'name':'raju'},
+					{'id':502,'name':'teja'},
+					{'id':503,'name':'arun'},
+				];
+Refer:Ex6.html
+
+
+
+
+
+_________________
+___________________________________________________
+topic7:
+Nested Objects:
+==============
+Object inside another object is called as Nested Objects
+
+	student
+		id
+		age
+		name	:	firstname & lastname
+		address	:	hno,city,pin
+		
+Refer:Ex7.html
+
+____________________________________________________________________
+topic8:
+Array inside Objects:
+==================
+	student
+		id
+		name	:	firstname & lastname
+		hobbies	:	[hob1,hob2,...]
+		
+Refer:Ex8.html
+___________________________________________________________________
+topic9:
+
+	Object	=	Data	+ 	Functions
+
+Ex1:Human as Object
+
+	Human	=	name,age,height,gender,...	+ 	eating(),sleeping(),walking()
+
+
+Refer:Ex21.html
+
+
+
+
+
+
+
+
+
+

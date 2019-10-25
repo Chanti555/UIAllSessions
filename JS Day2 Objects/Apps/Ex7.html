@@ -1,0 +1,28 @@
+<html>
+<body>
+    <script>
+    //Nested Objects
+    var student={
+        id:1,
+        name:'Ram',
+        address:{
+                    hno:202,
+                    street:'Mythrivanam',
+                    city:'Ameerpet',
+                    pin:500016
+                },
+        dob:    {
+                    day:12,
+                    month:'June',
+                    year:1995
+                },
+        location:{
+            latitude:17.437462,
+            longitude:78.448288
+        }
+    };
+    document.write(JSON.stringify(student))
+    console.log(student)
+    </script>
+</body>
+</html>
