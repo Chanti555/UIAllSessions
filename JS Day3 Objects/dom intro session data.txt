@@ -1,0 +1,43 @@
+DOM:(Document Object  Model)
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Events:
+-------
+Action on html item/tag/element is called as Event.
+Ex:
+    1.Clicking on button or link
+    2.Select an item from dropdown box
+    3.Checking checkbox & radio button
+    etc
+Types of Events:
+-----------------
+1.Mouse related Events
+2.Key related Events
+3.Focus related Events
+4.Form related Events
+5.Other events
+
+

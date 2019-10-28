@@ -1,0 +1,47 @@
+Object Represenation in JS:
+---------------------------
+Object=data + functions
+
+Ex1:
+
+human.html
+human.js
+
+Ex2:   Addition of 2 numbers
+
+Data        :num1,num2
+Function    :sum()
+
+add.html
+add.js
+
+Ex3:   total of 6 subject marks
+
+Data        :prepare array if 6 subject marks
+Function    :totalMarks()
+
+marks.html
+marks.js
+
+Problem Statement1:
+------------------
+    Find simple intreset
+
+Problem Statement2:
+------------------
+    Find square & cube of a number
+
+Problem Statement3:
+------------------
+    Design calculator
+
+Problem Statement4:
+------------------
+Generate zomato application
+
+Data        :   10 items with thier cost    (k->item names,v->cost)
+functions   :   printAllItems()
+                printTotalPriceOfItems()
+                printTotalPriceOfItemsWith25Discount()
+                searchingItem(item)
+                
