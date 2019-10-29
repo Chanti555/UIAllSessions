@@ -1,0 +1,48 @@
+Document Object Model:
+=====================
+1.Html Page is a collection of tags.
+2.Html code is executed  on browser line by line from top.
+3.<html> tag is preferred as DOCUMENT inbuit object in JS.
+4.Each tag in DOCUMENT is treated as an Object called as DOM.
+5.Each tag in <body> tag is treated as an Element.
+6.All Elements are identified by uniquley by assigning "ID" attrubite.
+
+To check:	
+goto console of any html page & type following statements
+
+	1.document.URL
+	2.document.head
+	3.document.body
+
+Document Object Model Tree:
+===========================
+1.Html code is executed  on browser line by line
+2.How browser will load the html tags are given by DOM tree.
+3.Each element is selected by calling "getElementById()" method
+
+DOM Tree: refer pic1.jpg
+
+Document Object Model Manipulation:
+===================================
+Step1:Understanding following 2 properties of each element.
+
+1.value 	:This property can be taken in 2 approaches
+	1.For <input> tag	
+	2.For <select> & <teaxtarea> tag
+2.innerHTML
+	:This property can be taken for all elements except
+	<input>,<select> & <teaxtarea> tags
+
+Step2:DOM Manipulation
+
+	1.Here we have to get element data through "value" or innerHTML
+	2.Here we have to set element data through "value" or innerHTML
+
+Refer: domintro1.html
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<html>
+<body>
+   <span id="s1">Mobile:</span>
+   <input type="number" value="30000" id="t1">
+   <br><br>
+   <span id="s2">Tablet:</span>
+   <input type="number" value="15000" id="t2">
+   <br><br>
+   <span id="s3"></span>
+   <input type="number" id="t3">
+   <script>
+       document.getElementById('s1').innerHTML='TV:';
+       var ap=document.getElementById('t1').value;
+       ap=ap-10000;
+       document.getElementById('t1').value=ap;
+       document.getElementById('t1').style.color='red';
+       document.getElementById('s2').innerHTML='Laptop:';
+       document.getElementById('t2').value=45000;
+       document.getElementById('t2').style.color='red';
+
+    var p1=document.getElementById('t1').value;
+    var p2=document.getElementById('t2').value;
+    var tot=eval(p1)+eval(p2);
+    document.getElementById('s3').innerHTML='Total price is:';
+    document.getElementById('t3').value=tot;
+   </script>
+</body>
+</html>
