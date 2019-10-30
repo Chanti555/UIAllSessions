@@ -1,0 +1,117 @@
+Document Object Model Manipulation:
+=================================
+We have 3 methods to perform DOM Manipulations.
+
+1.getElementById()
+2.querySelector()
+3.querySelectorAll()
+
+1.getElementById()
+_______________________
+	method returns the specific element based on id
+1.innerHTML	=>	Text between tags
+
+	Ex:
+		<p>
+			Hi
+		</p>
+
+	Here "Hi" is a innerHTML of <p> tag
+
+2.value		=> is a data which is present in <input> tags
+
+	Ex:
+		<input type="text" value="Ajay">    
+
+	Here "Ajay" is a  value of <input> tag
+2.querySelector():
+___________________
+	method returns the one element 
+	By id selector it select that id element
+	By class selector it select first element
+
+Example:Ex1.html
+
+
+
+3.querySelectorAll():
+_________________
+The querySelectorAll() method returns all elements in the document that matches in array format.
+Based on index we can do DOM Manipulation.
+Example:
+	Ex2.html
+	Ex3.html
+
+
+
+
+
+
+
+
+________________________________________________________________________
+Events:
+======
+	Action on html item is called as event
+Ex:
+	button	was clicked once	
+	button	was clicked twice
+	selecting menu item from dropdown box
+	checking one item from radio button
+	......
+
+Types of events:
+-----------------------
+1.Mouse Related events
+2.Key related events
+3.Focus related events
+4.Form related events
+5.Other events
+
+Note:
+--------
+	All events must starts with "on" keyword
+	
+1.Mouse Related events:
+=======================
+1.onclick()				:Triggered when user single click on item
+2.ondblclick()
+3.onmouseenter()
+4.onmouseleave()
+5.onmouseover()
+6.onmousemove()
+
+Example:		eventex1.html
+				eventex2.html
+				eventex3.html
+
+2.Key related events:
+=====================
+
+1.onkeypress(): this event is triggered when user type a key
+2.onkeydown(): this event is triggered when user type a key
+3.onkeyup(): this event is triggered when user leave a key
+
+Example:		eventex4.html
+
+
+3.Focus related events:
+=======================
+1.onblur(): this event is triggered when cursor leaves from element
+2.onfocus(): this event is triggered when cursor entered into element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

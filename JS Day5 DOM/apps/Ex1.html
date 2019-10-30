@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>querySelector app</title>
+    </head>
+<body>
+    <u>Courses:</u>
+    <ol>
+        <li id="id1">C</li>
+        <li id="id2">Cpp</li>
+        <li id="id3">Java</li>
+        <li class="c1">Python</li>
+        <li>.Net</li>
+    </ol>
+    <script>
+        document.querySelector('li').innerHTML='Kotlin';
+        document.querySelector('li').style.color='red';
+        document.querySelector('#id3').innerHTML='JS';
+        document.querySelector('#id3').style.color='blue';
+        document.querySelector('.c1').innerHTML='New Python';
+        document.querySelector('.c1').style.color='green';
+    </script>
+</body>
+</html>

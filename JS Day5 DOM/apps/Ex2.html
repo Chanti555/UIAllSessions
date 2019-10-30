@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>querySelectorAll app</title>
+    </head>
+<body>
+    <u class="c1">Courses:</u>
+    <ol class='c2'>
+        <li>C</li>
+        <li>Cpp</li>
+    </ol>
+    <u class="c1">Branches:</u>
+    <ol class='c2'>
+        <li>Ameerpet</li>
+        <li>SR Nagar</li>
+    </ol>
+    <script>
+        var temp1=document.querySelectorAll('.c1');
+        var temp2=document.querySelectorAll('.c2');
+        temp1[0].style.color='red';
+        temp1[1].style.color='purple';
+        temp2[0].style.color='green';
+        temp2[1].style.color='indigo';
+      </script>
+</body>
+</html>

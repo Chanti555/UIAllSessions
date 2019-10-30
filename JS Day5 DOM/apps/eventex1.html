@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Dom Manipluation with Events</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+            document.querySelector('h1').innerHTML='Bye';
+    </script>
+    <script>
+        function changeMyText1()
+        {
+            document.querySelector('h2').innerHTML='Good evening';
+        }
+        function changeMyText2()
+        {
+            document.querySelector('h2').innerHTML='Good Night';
+        }
+    </script>
+    <h2 onmouseenter='changeMyText1()' onmouseleave='changeMyText2()'>
+        Good Morning
+    </h2>
+</body>
+</html>
