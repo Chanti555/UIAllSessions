@@ -1,0 +1,36 @@
+Events:
+======
+	Action on html item is called as event
+Ex:
+	button	was clicked once	
+	button	was clicked twice
+	selecting menu item from dropdown box
+	checking one item from radio button
+	......
+
+Types of events:
+-----------------------
+1.Mouse Related events
+2.Key related events
+3.Focus related events
+4.Form related events
+5.Other events
+____________________________________________________________
+4.Form related events:
+======================
+We have 2 form related events i.e they should be used in form level
+1.onsubmit:
+	Triggered when user click on submit button
+	onsubmit event function must return boolean value
+	If function return true only then form data submitted to Action
+	If function return false then form data not submitted to Action
+
+2.onreset:
+	Triggered when user click on reset button
+	onreset event function must return boolean value
+	If function return true only then form data erased
+	If function return false then form data not erased
+
+
+
+

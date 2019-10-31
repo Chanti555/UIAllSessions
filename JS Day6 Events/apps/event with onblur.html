@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form
+{
+    border: 1px solid red;
+}
+</style>
+<script>
+function fun1()
+{
+    var myname=document.f1.n1.value;
+    if(myname=="")
+    {
+        document.getElementById('s1').innerHTML='*Please fill name';
+        document.getElementById('s1').style.color='red';
+        document.f1.n1.focus();
+    }
+    else
+    {
+        alert(myname+' Name is accepted');
+    }
+}
+</script>
+</head>
+<body>
+<form name="f1" action="TG">
+<table align="center">
+    <tr>
+        <td>
+                <label for="t1">Name:</label>
+        </td>
+        <td>
+                <input type="text" id="t1" name="n1" onblur="fun1()">
+        </td>
+        <td>
+               <span id="s1">*</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="submit">
+        </td>
+    </tr>
+</table>
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+    

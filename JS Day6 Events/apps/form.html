@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form
+{
+    border: 1px solid red;
+}
+</style>
+<script>
+function fun1()
+{
+    var myname=document.f1.n1.value;
+    if(myname=="")
+    {
+        alert('Please fill name');
+        return false;
+    }
+    else
+    {
+        alert(myname+' Name is accepted');
+        return true;
+    }
+}
+function fun2()
+{
+    var temp=confirm('Are u sure to reset?');
+    if(temp==true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<form name="f1" action="TG" onsubmit="return fun1()" onreset="return fun2()">
+<table align="center">
+    <tr>
+        <td>
+                <label for="t1">Name:</label>
+        </td>
+        <td>
+                <input type="text" id="t1" name="n1">
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="submit">
+        </td>
+        <td>
+                <input type="reset">
+        </td>
+    </tr>
+</table>
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+    
