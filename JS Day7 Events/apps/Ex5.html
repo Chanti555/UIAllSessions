@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+img
+{
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+}
+</style>
+<script>
+function fun1()
+{
+    var names=['Ajay','Ram','Venu','Ashok']; 
+    var temp='';
+    for(var i=0;i<names.length;i++)
+    {
+        temp=temp+"<li>"+names[i]+"</li>";
+    }
+    document.getElementById('ol1').innerHTML=temp;
+}
+function fun2()
+{
+    var names=['Ajay','Ram','Venu','Ashok']; 
+    var temp='';
+    temp=temp+"<tr><th>SID</th><th>SNAME</th></tr>";
+    for(var i=0;i<names.length;i++)
+    {
+        temp=temp+"<tr><td>"+(i+1)+"</td>";
+        temp=temp+"<td>"+names[i]+"</td></tr>";
+    }
+    document.getElementById('tab1').innerHTML=temp;
+}
+</script>
+</head>
+<body>
+    <ol id="ol1">   </ol>
+    <table id="tab1" border="1"></table>
+    <button onclick="fun1()">Show Names in OL</button>
+    <button onclick="fun2()">Show Names in Table</button>
+</body>
+</html>

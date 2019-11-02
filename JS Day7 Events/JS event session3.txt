@@ -1,0 +1,25 @@
+5.Other events:
+---------------
+1.onload():
+
+It  is body level event.
+This event is triggered as soon as body is loaded into browser.
+
+Refer:Ex1.html
+
+2.oncopy()	
+	This event is triggered as soon as we copy the text
+
+3.onselect()
+	This event is triggered as soon as we select all text
+
+Refer:Ex2.html
+
+3.onunload():
+	This event is triggered as soon as we src is delaying to load
+Refer:Ex3.html
+
+4.onchange():
+	This event is triggered as soon as we select an option on dropdown list.
+
+Refer:Ex4.html

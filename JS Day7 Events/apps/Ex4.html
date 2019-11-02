@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+img
+{
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+}
+</style>
+<script>
+function fun1()
+{
+    document.getElementById('n2').src=document.getElementById('n1').value;
+}
+</script>
+</head>
+<body>
+Select Ur fav pic:
+<select id="n1" onchange="fun1()">
+    <option value="select pic">select pic</option>
+    <option value="pic1.jpg">Location1</option>
+    <option value="pic2.jpg">Location2</option>
+    <option value="pic3.jpg">Location3</option>
+</select>
+<br><br>
+<img src="pic1.jpg" id="n2">
+</body>
+</html>

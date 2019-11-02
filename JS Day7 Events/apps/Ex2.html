@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function fun1()
+{
+    document.bgColor='yellow';
+}
+function fun2()
+{
+    alert('Data is copied');
+}
+function fun3   ()
+{
+    alert('Data is selected');
+}
+</script>
+</head>
+<body onload="fun1()">
+    Name:
+    <input type="text" oncopy="fun2()" onselect="fun3()">
+</body>
+</html>
