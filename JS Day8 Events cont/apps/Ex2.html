@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+var names=['Ajay','Ram','Venu','Ashok']; 
+function loadarray()
+{
+    var temp='';
+    temp=temp+"<tr><th>SID</th><th>SNAME</th></tr>";
+    for(var i=0;i<names.length;i++)
+    {
+        temp=temp+"<tr><td>"+(i+1)+"</td>";
+        temp=temp+"<td>"+names[i]+"</td></tr>";
+    }
+    document.getElementById('tab1').innerHTML=temp;
+}
+function addElement()
+{
+    names.push(document.getElementById('t1').value);
+    loadarray();
+}
+function removeElement()
+{
+    names.pop();
+    loadarray();
+}
+</script>
+</head>
+<body onload="loadarray()">
+    <table id="tab1" border="1"></table>  <br>
+    Name:<input type="text" id="t1">  <br> <br>
+    <button onclick="addElement()">ADD</button>
+    <button onclick="removeElement()">REMOVE</button>
+</body>
+</html>

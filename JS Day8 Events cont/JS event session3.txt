@@ -1,0 +1,10 @@
+Task2 reference site:
+---------------------
+http://jsfiddle.net/k148pk76/1/
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Object representaion in table format:
+-------------------------------------
+Refer 
+		Ex1.html & Ex2.html
+		
+Refer Ex3.html for Comparison of JavaScript & jQuery

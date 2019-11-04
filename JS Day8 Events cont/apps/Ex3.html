@@ -1,0 +1,42 @@
+<html>
+<head>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+</head>
+<body>
+<h1 id="x">X Data</h1>
+<script>
+    document.getElementById('x').innerHTML='Welcome to Js';
+    document.getElementById('x').style.color='red';
+</script>
+<h1 id="y">Y Data</h1>
+<script>
+    $('#y').text('Welcome to jQuery1');
+    $('#y').css('color','red');
+</script>
+<h1 id="z">Z Data</h1>
+<script>
+    function fun1()
+    {
+        $('#z').text('Welcome to jQuery2');
+    }
+    fun1();
+</script>
+<h1 id="p">P Data</h1>
+    <script>
+        function fun2()
+        {
+            $('#p').text('Welcome to jQuery3');
+        }
+        $(document).ready(fun2());
+    </script>
+<script>
+    $(document).ready(function()
+    {
+        $('#q').text('Welcome to jQuery4');
+    });
+</script>
+<h1 id="q">Q Data</h1>
+</body>
+</html>
