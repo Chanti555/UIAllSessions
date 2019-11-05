@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Events</title>
+    <style>
+    div
+    {
+       border: 1px solid green;
+       padding: 10px;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+   <button id="b1">Click Me Once</button>
+   <button id="b2">Click Me Twice</button>
+   <br><br>
+   <div>
+       <input type="text" id="t1">&nbsp;&nbsp;
+       <input type="text" id="t2">&nbsp;&nbsp;
+       <button id="b3">ADD</button>
+       <input type="text" id="t3">
+   </div>
+   <script>
+       $(document).ready(function()
+       {
+          $('#b1').click(function()
+          {
+            alert('Button1 clicked once');
+          });
+          $('#b2').dblclick(function()
+          {
+            alert('Button2 clicked twice');
+          });
+          $('#b3').click(function()
+          {
+            var x=$('#t1').val();
+            var y=$('#t2').val();
+            var z=eval(x)+eval(y);
+            $('#t3').val(z);
+          });
+       });
+   </script>
+</body>
+</html>

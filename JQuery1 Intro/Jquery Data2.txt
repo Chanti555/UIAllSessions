@@ -1,0 +1,127 @@
+Standard Syntax:
+-----------------------
+$(document).ready(			//Anonymous Function
+			function()			
+			{
+				$("h1").text("WELCOME From JQuery Program");
+			}
+		);
+
+Basic Code Explaination:
+------------------------
+1.$:
+----
+	->Act as constructor in jquery
+	->Can be writeen as $() or jQuery()
+	->All jQuery constructors starts with $
+	->constructors starts with $ and selector enclosed with (,)
+	->Selector can be
+
+		1.Element tag Selector		=>("p")
+		2.Element id Selector		=>("#id1")
+		3.Element class Selector	=>(".c1")
+
+
+
+2.() selector:
+------------------
+	It search whole document(DOM->Dcoument Object Model) to find all selectors that match
+with given selector property.
+
+3.$(document).ready():
+----------------------
+	Executing jQuery code after the html documnet has completely loaded & 
+	ready to manipulate.
+
+Content:
+---------------
+1.Selector Types
+2.Events	{same as javascript events}
+3.Effects
+4.Html manipulations
+5.Css manipulation
+6.Traversing
+7.Filters
+8.Ajax
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Selector Types:
+-------------------------
+
+SNO	Selector	Description				Ex
+---	--------	-----------				--
+1	Tag			Specific tag selected	$("p"),$("h1"),.....
+2	Id			Specific ID selected	$("#id1"),...
+3	Class		Specific class selected	$(".c1"),...
+4	Universal	All dom selected		$("*"),...
+5	this		current dom selected	$(this),...
+
+
+Ex5.html
+
+2.Events:
+---------
+	An action on html item is called as an Event.
+Ex:
+	button was clicked
+	button was double clicked
+	mouse entered on p item
+
+Ex6.html
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3.Effects:		Ex5.html
+==========
+1.hide/show	
+2.fadein/out
+3.slidedown/up
+4.animate
+
+
+1.hide/show :
+---------------------
+	you can hide and show HTML elements
+
+Methods:
+	hide()
+	show()
+	toggle()	{hide+show}
+	
+Ex5.html
+
+2.fadein/out:
+--------------------
+	you can fade elements in and out of visibility
+
+Methods:
+	fadeIn()
+	fadeOut()
+	fadeToggle()	{in+out}
+
+Note:	In css make display: none; to work with fade style
+
+3.slidedown/up:
+------------------------------
+	you can create a sliding effect on elements
+
+Methods:
+	slideDown()
+	slideUp()
+	slideToggle()	{Down+Up}
+4.animate:
+---------------
+ Resizinig & Replacing html items
+
+ animate() method is used to create custom animations
+
+
+Note:	In css make position:relative; to work with fade style
+
+
+_____________________________________________________________________________________
+
+
+
+

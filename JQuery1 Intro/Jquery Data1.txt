@@ -1,0 +1,73 @@
+UI(User Interface) Technologies:
+-----------------------------------------------
+jQuery is a JavaScript library designed to 
+1.simplify HTML DOM tree traversal and manipulation,
+2.Event handling, CSS animation, Affects and Ajax Calls.
+
+License				: MIT(Massachusetts Institute of Technology)
+Original author		: John Resig
+Stable release		: 3.4.1
+Initial release date: 26 August 2006
+Written in			: JavaScript
+Site				: https://jquery.com/
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+JQuery:
+----------
+	->Introduced in 2006 by John Resig.
+	->JQuery is langauge developed on completely JavaScript.
+	->JavaScript library is used to preapre a Jquery program.
+	->Jquery is used by Google,MicroSoft,IBM,,...
+Uses:
+	1.Html manipulation
+	2.CSS manipulation
+	3.JS Event Handling
+	4.Animations & Effects
+	5.JSON parsing
+	6.Ajax interaction
+	7.DOM Traversing
+
+Installation Process:
+-----------------------------
+We can use JQuery in two ways
+
+1.Downloading JQuery library(.js file from jquery site)
+	
+	->Paste the downloaded filr into the current working directory
+	->We can get this .js file in two versions
+		1.Production Version
+				->Live web sites				{compressed version}
+		2.Development Version
+				->Testing & development purpose	{uncompressed version}
+
+2.Using CDN url{Content Delivery Network}
+
+	Jquery CDN is given by Google & Microsoft.
+
+
+Note:
+
+1.In both process we use <script> tag to add the .js libraryname or cdn url
+2.<script> should be present in <head> tag
+
+Google CDN:
+-----------
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+Microsoft CDN:
+--------------
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+1.Ex1.html	Installation of Jquery
+2.Ex2.html	difference between JS & Jquery code
+3.Ex3.html	Jquery Standard Syntax
+4.Ex4.html	difference between JS & Jquery manipulation
+__________________________________________________________________________
+
+

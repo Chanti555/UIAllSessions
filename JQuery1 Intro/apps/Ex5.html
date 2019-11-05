@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>5 Selector Types</title>
+    <style>
+    div
+    {
+       border: 1px solid green;
+       height: 40px;
+       margin-bottom: 10px;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="p1">
+        Hello
+    </p>
+    <p id="p2" class="c1">
+        Chanti
+    </p>
+    <p id="p3" class="c1">
+         How are you?
+    </p>
+    <button>Click Me</button>
+   <script>
+       $(document).ready(function()
+       {
+           $('p').css('color','green');
+           $('#p1').css('background-color','yellow');
+           $('.c1').css('background-color','pink');
+           $('*').css('font-size','30px');
+           $('button').click(function()
+           {
+               $(this).css('color','green');
+               alert('Welcome to jQuery event');
+           });
+       });
+   </script>
+</body>
+</html>

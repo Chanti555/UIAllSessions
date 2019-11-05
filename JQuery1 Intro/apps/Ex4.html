@@ -1,0 +1,34 @@
+<html>
+<head>
+    <style>
+    div
+    {
+       border: 1px solid green;
+       height: 40px;
+       margin-bottom: 10px;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+   <div id="d1"></div>
+   <script>
+    function fun1()
+    {
+        document.getElementById('d1').innerHTML='DIV1';
+        document.getElementById('d2').innerHTML='DIV2';
+    }
+    fun1();
+   </script>
+   <div id="d2"></div>
+   <div id="d3"></div>
+   <script>
+    $(document).ready(function()
+    {
+        $('#d3').text('DIV3');
+        $('#d4').text('DIV4');
+    });
+   </script>
+   <div id="d4"></div>
+ </body>
+</html>
