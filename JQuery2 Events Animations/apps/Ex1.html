@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+        div
+        {
+            height: 200px;
+            width: 100%;
+            background-color: aquamarine;
+            text-align: center;
+            padding-top: 100px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+            Welcome to jquery Afftects
+    </div>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button id="b3">Toggle</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+                $('div').hide('fast');
+            });
+            $('#b2').click(function()
+            {
+                $('div').show(2000);
+            });
+            $('#b3').click(function()
+            {
+                $('div').toggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

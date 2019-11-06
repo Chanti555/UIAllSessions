@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body bgcolor="yellow">
+    <div>
+            Welcome to <b>jquery</b> <s>Afftects</s><br>
+            <input type="text" value="Chanti"><br>
+            <a href="https://www.paytm.com">PayTm</a>
+    </div>
+    <br><br><br><br><br><br><br>
+    <button id="b1">GetText</button>
+    <button id="b2">GetHtml</button>
+    <button id="b3">GetVal</button>
+    <button id="b4">GetAttr</button>
+    <script>
+        
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+                alert($('div').text());
+            });
+            $('#b2').click(function()
+            {
+                alert($('div').html());
+            });
+            $('#b3').click(function()
+            {
+                alert($('input').val());
+            });
+            $('#b4').click(function()
+            {
+                alert($('body').attr('bgcolor'));
+            });
+        });
+    </script>
+</body>
+</html>

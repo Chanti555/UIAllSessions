@@ -1,0 +1,79 @@
+Content:
+--------
+1.Selector Types
+2.Events	{same as javascript events}
+3.Effects
+4.Html manipulations
+5.Css manipulation
+6.Traversing
+7.Filters
+8.Ajax
+9.Dimesions
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3.Effects:		
+==========
+1.hide/show	
+2.fadein/out
+3.slidedown/up
+4.animate
+1.hide/show :
+---------------------
+	you can hide and show HTML elements
+
+Methods:
+	hide()
+	show()
+	toggle()	{hide+show}
+	
+Ex1.html
+
+2.fadein/out:
+--------------------
+	you can fade elements in and out of visibility
+
+Methods:
+	fadeIn()
+	fadeOut()
+	fadeToggle()	{in+out}
+
+Note:	
+	In css make display: none; to work with fade style
+
+Ex2.html
+
+
+
+
+
+3.slidedown/up:
+------------------------------
+	you can create a sliding effect on elements
+
+Methods:
+	slideDown()
+	slideUp()
+	slideToggle()	{Down+Up}
+
+
+Ex3.html
+
+
+
+
+4.animate:
+---------------
+ Resizinig & Replacing html items
+
+ animate() method is used to create custom animations
+
+
+Note:	
+	In css make position:relative; to work with fade style
+
+Ex4.html
+_____________________________________________________________________________________
+
+
+
+

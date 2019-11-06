@@ -1,0 +1,115 @@
+4.Html manipulations:
+===================		
+				Actions				Method
+				======				=======
+1.Get the data from Html Tags		text(),html(),val(),attr()			
+2.Set Data to the Html Tags			text(),html(),val(),attr()			
+3.Adding data to Html tags			append(),prepend(),after(),before()		
+4.Removing data from Html tags		remove(),empty()				
+
+1.Get the data from Html Tags:
+------------------------------
+Methods:
+
+	1.text()	->Returns text between html tags
+	2.html()	->Returns text & html code
+	3.val()		->Returns value of the form field
+	4.attr()	->Returns attribute value
+Ex:
+	Ex5.html
+
+2.Set Data to the Html Tags:
+----------------------------------------
+Methods:
+
+	1.text()	->Set text in between html tags
+	2.html()	->Set text & html code
+	3.val()		->Set value to the form field
+	4.attr()	->set a attribute value
+Ex:
+	Ex6.html
+3.Adding data to Html tags:
+---------------------------
+	1.append()
+	2.prepend()
+	3.after()
+	4.before()
+
+
+Ex:
+	Ex7.html
+
+4.Removing data from Html tags:
+-------------------------------
+	1.remove()
+	2.empty()
+
+Ex:
+	Ex8.html
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5.Css manipulation:			Ex10.html
+----------------------------
+	1.addClass()
+	2.removeClass()
+	3.toggleClass()
+	4.css()
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+6.Dimensions:			Ex11.html
+---------------------
+	1.width()
+	2.height()
+	3.innerWidth()	=width+padding-left+padding-right
+	4.innerHeight()	=height+padding-top+padding-bottom
+	5.outerWidth()	=width++padding-left+padding-right+border-left+border-right
+	6.outerHeight()	=height+padding-top+padding-bottom+border-tom+border-bottom
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7.Traversing:			Ex12.html
+===========
+	By default we can access dom elements in top-bottom approach only
+	By using we Traversing,we can access html dom elements in 3 approaches
+	1.Traversing Up the DOM Tree
+	2.Traversing Down the DOM Tree
+	3.Traversing Sideways in The DOM Tree
+
+1.Up the DOM Tree:
+==================
+parent()
+parents()
+parentsUntil()
+
+2.Traversing Down the DOM Tree:
+==============================
+children()
+find()
+
+3.Traversing Sideways in The DOM Tree:
+===================================
+siblings()
+next()
+nextAll()
+nextUntil()
+prev()
+prevAll()
+prevUntil()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

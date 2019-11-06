@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        img
+        {
+            height: 200px;
+            width: 200px;
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="1.jpg">
+    <hr>
+    <button id="b1">FadeIn</button>
+    <button id="b2">Fadeout</button>
+    <button id="b3">FadeToggle</button> 
+    <script>
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+                $('img').fadeIn(2000);
+            });
+            $('#b2').click(function()
+            {
+                $('img').fadeOut(500);
+            });
+            $('#b3').click(function()
+            {
+                $('img').fadeToggle(5000);
+            });
+        });
+    </script>
+</body>
+</html>

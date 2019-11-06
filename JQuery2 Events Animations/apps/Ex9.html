@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+.c1
+{
+    border: 1px solid green;
+}
+.c2
+{
+   text-align: center;
+}
+.c3
+{
+    background-color: cornsilk;
+}
+.c4
+{
+    color: red;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <p>Hi</p>
+    <p>Hello</p>
+    <p>Bye</p>
+    <button id="b1">AddClass</button>
+    <button id="b2">RemoveClass</button>
+    <button id="b3">ToggleClass</button>
+    <button id="b4">CSS</button>
+    <script>
+        
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+              $('p').addClass('c1 c2 c3 c4');
+            });
+            $('#b2').click(function()
+            {
+              $('p').removeClass('c3 c4');
+            });
+            $('#b3').click(function()
+            {
+              $('p').toggleClass('c1 c2 c3 c4');
+            });
+            $('#b4').click(function()
+            {
+              $('h3').css({'color':'red','background-color':'yellow'});
+            });
+        });
+    </script>
+</body>
+</html>

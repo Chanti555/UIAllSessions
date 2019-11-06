@@ -1,0 +1,36 @@
+<html>
+<head>
+    <style>
+        img
+        {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="1.jpg">
+    <hr>
+    <button id="b1">SlideUp</button>
+    <button id="b2">SlideDown</button>
+    <button id="b3">SlideToggle</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+                $('img').slideUp(2000);
+            });
+            $('#b2').click(function()
+            {
+                $('img').slideDown(1000);
+            });
+            $('#b3').click(function()
+            {
+                $('img').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

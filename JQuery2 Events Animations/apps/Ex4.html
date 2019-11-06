@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        img
+        {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="Koala.jpg">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button id="b1">START</button>
+    <script>
+        $(document).ready(function()
+        {
+            $('#b1').click(function()
+            {
+              $('img')
+              .animate({'height':150,'width':150},'slow')
+              .animate({'height':100,'width':100},5000)
+              .animate({'height':50,'width':50},'slow')
+              .animate({'left':100})
+              .animate({'right':100})
+              .animate({'height':500,'width':500},'fast');
+            });
+        });
+    </script>
+</body>
+</html>
