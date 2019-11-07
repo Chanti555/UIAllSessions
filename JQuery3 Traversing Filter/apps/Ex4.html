@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+.c1
+{
+    color:red ;
+}
+</style>
+</head>
+<body>
+Name:<input type="text" id="t1"><span id="s1">*</span>
+<br><br>
+<button id="b1">CheckData</button>
+<script>
+$(document).ready(function()
+{
+    $('#b1').prop('disabled', true);
+   $('#t1').blur(function()
+   {
+       var temp=$('#t1').val();
+       if(temp=="")
+       {
+           $('#s1').text('* Please enter name');
+           $('#s1').addClass('c1');
+       }
+       else
+       {
+        $('#b1').prop('disabled', false);
+         
+       }
+   });
+   $('#b1').click(function()
+   {
+        alert('Ur Name is:'+$('#t1').val());
+   });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+*
+{
+    margin: 10px;
+}
+.c1
+{
+    border: 1px solid red;
+}
+</style>
+</head>
+<body>
+<header>
+        <h1 id="h1">Welcome to <i>Tg</i></h1>
+</header>
+<div id="d1">
+    <u id="u1">Courses:</u>
+    <ol>
+        <li>Java</li><li>Python</li><li>UI</li>
+    </ol>
+</div>
+<div id="d2">
+    <u id="u2">Branches:</u>
+    <ul>
+        <li>Ameerpet</li> <li>SR NAGAR</li>
+    </ul>
+</div>
+<footer>
+        <h1 id="h2">Thank u for choosing <s>TG</s></h1>
+</footer>
+<script>
+$(document).ready(function()
+{
+    //1.Up the DOM Tree
+    //$('s').parent().addClass('c1');
+    //$('s').parents().addClass('c1');
+    //$('s').parentsUntil('footer').addClass('c1');
+    //2.Traversing Down the DOM Tree:
+    //$('header').children().addClass('c1');
+    //$('header').find('i').addClass('c1');
+    //3.Traversing Sideways in The DOM Tree:
+    //$('#d2').siblings().addClass('c1');
+    //$('header').next().addClass('c1');
+    //$('header').nextAll().addClass('c1');
+    //$('header').nextUntil('footer').addClass('c1');
+    //$('footer').prev().addClass('c1');
+    //$('footer').prevAll().addClass('c1');
+    //$('footer').prevUntil('#d1').addClass('c1');
+});
+</script>
+</body>
+</html>

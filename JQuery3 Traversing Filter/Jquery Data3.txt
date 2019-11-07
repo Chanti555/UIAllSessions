@@ -1,0 +1,88 @@
+Content:
+--------
+1.Selector Types
+2.Events	{same as javascript events}
+3.Effects
+4.Html manipulations
+5.Css manipulation
+6.Traversing
+7.Filters
+8.Dimesions
+9.Ajax
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+6.Dimensions:			
+-------------
+	1.width()
+	2.height()
+	3.innerWidth()	=width+padding-left+padding-right
+	4.innerHeight()	=height+padding-top+padding-bottom
+	5.outerWidth()	=width++padding-left+padding-right+border-left+border-right
+	6.outerHeight()	=height+padding-top+padding-bottom+border-tom+border-bottom
+
+Ex1.html
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7.Traversing:		
+=============
+	By default we can access dom elements in top-bottom approach only
+	By using Traversing,we can access html dom elements in 3 approaches
+	1.Traversing Up the DOM Tree
+	2.Traversing Down the DOM Tree
+	3.Traversing Sideways in The DOM Tree
+
+1.Up the DOM Tree:
+==================
+parent()
+parents()
+parentsUntil()
+
+2.Traversing Down the DOM Tree:
+==============================
+children()
+find()
+
+3.Traversing Sideways in The DOM Tree:
+===================================
+siblings()
+next()
+nextAll()
+nextUntil()
+prev()
+prevAll()
+prevUntil()
+
+Ex2.html
+
+8.Filters:			
+========
+	Used to select particular dom elements & can modify
+
+1.first()
+2.last()
+3.eq()
+4.filter()
+5.has()
+6.not()
+7.slice()
+
+Ex3.html
+
+Basic validation using Jquery
+
+Ex4.html
+Use Jquery & solve below problems
+Q1:Disable right click on body
+Q2:Disable copy option body
+
+
+
+
+
+
+
+
+

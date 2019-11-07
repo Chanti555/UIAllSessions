@@ -1,0 +1,111 @@
+Ajax:(Asynchronous Javascript And Xml)
+===================================
+Ajax is technology(Html,Css,Js) is used to 
+	1.send request to server &
+	2.receive response from sever 
+at background.
+
+Types of communication between Client & Server:
+------------------------------------------------------------------------
+1.Synchronous communication
+2.Asynchronous communication
+
+
+1.Synchronous communication:
+-------------------------------------------------
+A synchronous request blocks the client until operation completes i.e. browser is unresponsive. 
+In such case, javascript engine of the browser is blocked.
+
+2.Asynchronous communication:
+-----------------------------------------------
+An asynchronous request doesn�t block the client i.e. browser is responsive. 
+At that time, user can perform another operations also. 
+In such case, javascript engine of the browser is not blocked.
+
+
+
+Ajax code is written by following tools
+--------------------------------------------------------
+1.Html		:	Dom preparation
+2.Css		:	Applying styles to Dom (Optional)
+3.JS/Jquery	:	1.Used to prepare code send client request to server & receive response from client
+			2.Dom manipulation
+4.Text or HTML or XML or JSON :	Format of Data which is collected from Server
+
+
+
+Software requirements:
+====================
+1.Web browser	:	send client request to server & receive response from client
+	Ex:GC,MF,IE,...
+2.Web server	:	accept request from client & send response to client
+	Ex:Tomcat server,NodeJs server
+3.IDE		:	preparing html,css,jquery code
+	Ex:Eclipse(It must have JDK)
+
+Order of software installation:
+--------------------------------------------
+1.Jdk installation		(Jdk1.8)
+2.Eclipse  installation	(Eclipse oxygen)
+3.Tomcat installation	(Tomcat 9)
+
+In youtube type:	Java by chanti	(Session1,2,3)
+
+Steps to write code in Eclipse:
+--------------------------------------------
+1.Open eclipse
+2.New
+3.Dynamic Project
+4.Name=AjaxEx1
+5.In target runtime->Click New Runtime->Select tomcat version->Browse tomcat intsalltion directory from
+	C:\Program Files\Apache Software Foundation\Tomcat 9.0		location->finish
+6.Next
+7.Next
+8.Check web.xml checkbox 
+9.Finish
+10.RightClick on project->new->html->name=index->finish
+11.RightClick on WebContent folder->new->File->name=resume.txt->finish
+  Type following data & save the file
+	"This is Chanti resume"
+
+11.Install jquery
+	copy jquery.js file & paste into WebContent folder in project directory then prepare following code
+ in index.html page
+	<head>
+		<script src='jquery.js'></script>
+	</head>
+
+12.Prepare jquery code to get resume.txt file data inside index.html page
+
+13.To run the project
+	RightClick on project->Run->Run as Server->Next->Finish
+
+Jquery functions:
+===============
+1.load()	->Retriving/Getting data from server
+2.get()	->Retriving/Getting data from server
+3.put()	->Updating data within server
+4.post()	->Inserting data within server
+5.delete()->Deleting data within server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

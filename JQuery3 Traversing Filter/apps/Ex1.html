@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    #d1
+    {
+        border: 5px solid green;
+        padding: 50px;
+        height: 100px;
+        width: 150px;
+        margin: 50px;
+    }
+</style>
+</head>
+<body>
+    <div id="d1">
+            Jquery Dimesions
+    </div>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <button id="b1">height</button>
+    <button id="b2">width</button>
+    <button id="b3">inner height</button>
+    <button id="b4">inner width</button>
+    <button id="b5">outer height</button>
+    <button id="b6">outer width</button>
+    <script>
+    $(document).ready(function()
+    {
+        $('#b1').click(function()
+        {
+            $('#p1').text('Height='+$('#d1').height());
+        });
+        $('#b2').click(function()
+        {
+            $('#p2').text('Width='+$('#d1').width());
+        });
+        $('#b3').click(function()
+        {
+            $('#p3').text('Inner Height='+$('#d1').innerHeight());
+        });
+        $('#b4').click(function()
+        {
+            $('#p4').text('Inner Width='+$('#d1').innerWidth());
+        });
+        $('#b5').click(function()
+        {
+            $('#p5').text('Outer Height='+$('#d1').outerHeight());
+        });
+        $('#b6').click(function()
+        {
+            $('#p6').text('Outer Width='+$('#d1').outerWidth());
+        });
+    });
+    </script>
+</body>
+</html>
