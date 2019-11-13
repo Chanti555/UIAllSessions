@@ -1,0 +1,12 @@
+<emps>
+	<emp>
+		<eid>301</eid>
+		<sname>Raj</sname>
+		<esal>25000</esal>
+	</emp>
+	<emp>
+		<eid>302</eid>
+		<sname>Raj</sname>
+		<esal>25000</esal>
+	</emp>
+</emps>

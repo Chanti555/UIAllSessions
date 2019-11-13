@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>								<br>
+	<button id="b1">Click to Get Html Data</button>
+	<button id="b2">Click to Get Xml Data</button>
+	<button id="b3">Click to Get Json Data</button>
+	<button id="b4">Click to Get Text Data</button>
+	<script>
+		$(document).ready(function()
+		{
+				$('#b1').click(function() 
+				{
+					$("#d1").load("emp.html",function(resTxt,stTxt,xhr)
+					{
+						alert("Status Code is:"+xhr.status+"Status is:"+stTxt)
+					});
+				});
+				$('#b2').click(function() 
+				{
+					$("#d2").load("emp.xml");
+				});
+				$('#b3').click(function() 
+						{
+							$.getJSON('emp.json',function (data) 
+							{
+								var myObj, i, x = "";
+								myObj=data;
+								for (i = 0; i < myObj.emps.length; i++) 
+								{
+								    x += myObj.emps[i].eid + ",";
+								    x += myObj.emps[i].ename + ",";
+								    x += myObj.emps[i].esal + ",";
+								}
+
+								$("#d3").text(x);
+							});
+						});
+				$('#b4').click(function() 
+				{
+					$("#d4").load("emp.txt");
+				});
+		});
+	</script>
+</body>
+</html>

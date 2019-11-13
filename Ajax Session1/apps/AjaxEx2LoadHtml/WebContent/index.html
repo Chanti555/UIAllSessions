@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="d1"></div>
+	<button id="b1">Click to Get Html Data</button>
+	<script>
+		$(document).ready(function()
+		{
+				$('#b1').click(function() 
+				{
+					$("#d1").load("emp.html",function(resTxt,stTxt,xhr)
+					{
+alert("Response Text"+resTxt+" Status is:"+stTxt+" Status Code is:"+xhr.status)
+					});
+				});
+		});
+	</script>
+</body>
+</html>
