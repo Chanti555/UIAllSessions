@@ -1,0 +1,219 @@
+Bootstrap:
+=========
+Bootstrap is a free and open-source CSS library directed at 
+1.designing responsive web pages
+2.mobile-first front-end web development.
+
+It contains CSS- and JavaScript-based design templates for 
+1.typography
+2.forms
+3.buttons
+4.navigation and other interface components
+
+History:
+=======
+Developers		: Mark Otto, Jacob Thornton
+License			: MIT License
+Stable release	: 4.3.1 / February 13, 2019
+Initial release date	: 19 August 2011
+Platform		: Web platform
+Written in		: HTML, Cascading Style Sheets, Less (v3), Sass (v4), JavaScript
+Website			:https://getbootstrap.com/
+
+
+
+What is Responsive Web Design?
+============================
+Responsive web design is about creating web sites which automatically 
+adjust themselves to look good on all devices, 
+from small phones to large desktops.
+
+
+Bootstrap Installation with CDN:
+================================
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+Bootstrap Containers:
+==================
+Bootstrap also requires a containing element to wrap site contents.
+
+There are two container classes to choose from:
+
+1.The .container class provides a responsive fixed width container
+2.The .container-fluid class provides a full width container, spanning the entire width of the 
+viewport
+
+bs ex1.html for demo program
+
+Bootstrap Grid System:
+================
+1.Bootstrap's grid system allows up to 12 columns across the page.
+2.If you do not want to use all 12 columns individually, you can group the columns 
+together to create wider columns
+3.Bootstrap's grid system is responsive, and the columns will re-arrange automatically 
+depending on the screen size.
+
+Grid Classes:
+===========
+The Bootstrap grid system has four classes:
+
+.xs 	(for phones - screens less than 768px wide)
+.sm 	(for tablets - screens equal to or greater than 768px wide)
+.md 	(for small laptops - screens equal to or greater than 992px wide)
+.lg 	(for laptops and desktops - screens equal to or greater than 1200px wide)
+
+syntax to use grid system:
+-------------------------------------
+<div class="row">
+  	<div class="col-*-*"></div>
+  	<div class="col-*-*"></div>
+</div>
+Example:
+-------------
+<div class="row">
+  	<div class="col-lg-6"></div>
+  	<div class="col-lg-6"></div>
+</div>
+
+Here .row class is used to desiging rows in webpage
+Here .col-*-* represents designing each column with in row
+Here first * indicates the device widths like xs,sm,md,lg
+Here secod * indicates the partition of row
+
+
+
+Ex2.html for grid system
+
+______________________________________________________________________
+
+1.Responsive Text:(typography)
+================
+The classes for text colors are:
+
+	.text-muted, 
+	.text-primary,
+	 .text-success, 
+	.text-info, 
+	.text-warning, 
+	.text-danger
+
+The classes for background colors are:
+
+	.bg-primary, 
+	.bg-success, 
+	.bg-info, 
+	.bg-warning, 
+	.bg-danger
+
+More Typography Classes
+
+.text-left		Indicates left-aligned text	
+.text-center	Indicates center-aligned text	
+.text-right	Indicates right-aligned text
+.text-lowercase	Indicates lowercased text	
+.text-uppercase	Indicates uppercased text	
+.text-capitalize	Indicates capitalized text
+
+	Ex3.html
+
+2.Responsive Lists:
+================
+	.list-group
+	.list-group-item list-group-item-success
+	.list-group-item list-group-item-info
+	.list-group-item list-group-item-warning
+	.list-group-item list-group-item-danger
+
+	Ex4.html
+
+
+3.Responsive Images:
+==================
+	img-rounded
+	img-circle
+	img-thumbnail
+	img-responsive class makes the image scale nicely to the parent element 
+		(resize the browser window to see the effect)
+	Ex5.html
+
+4.Responsive table:
+=================
+	table 			class adds basic styling to a table
+
+	table-bordered 		class adds borders on all sides of the table and cells
+
+	table-hover 		class adds a hover effect (grey background color) on table rows
+
+table row:
+==========
+	active, success, info, warning, danger.
+
+	Ex6.html
+
+5.Responsive Button:
+==================
+	btn
+	btn-default
+	btn-primary
+	btn-success
+	btn-info
+	btn-warning
+	btn-danger
+	btn-link
+
+	The classes that define the different sizes are:
+
+	btn-lg
+	btn-md
+	btn-sm
+	btn-xs
+
+	active makes a button appear pressed
+	disabled makes a button unclickable
+
+	Ex6.html
+
+6.Responsive Form & Items:
+========================
+Bootstrap Form Layouts:
+-------------------------------------
+Bootstrap provides three types of form layouts:
+
+1.Vertical form (this is default)
+2.Horizontal form
+3.Inline form
+
+
+.form-group		:<form>
+.form-control		:<input type="text">,<input type="dob">
+	
+<form>
+	<label>Name:	</lable>
+	<input type="text">
+	<label>DOB:	</lable>
+	<input type="dob">
+</form>
+
+
+glyphicons:
+=========
+https://www.glyphicons.com/
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<head> tag child tags:
+=====================
+1.<title>
+2.<link>
+3.<script>
+4.<meta>
+
+<meta> tag in html:
+=================
+The <meta> tag provides metadata about the HTML document. 
+Metadata will not be displayed on the page, but will be machine parsable.
+It is one of the child tag of <head> tag
+Meta elements are typically used to specify page 
+1.description
+2.keywords
+3.author of the document
+4.last modified
+
+Who uses this <meta> tag:
+-------------------------
+The metadata can be used by
+ 
+1.browsers (how to display content or reload page)
+2.search engines (keywords),
+3.web services.
+
+Rules:
+-------
+1.<meta> tags always go inside the <head> element.
+2.Metadata is always passed as name/value pairs.
+
+Metadata includes:
+----------------------------
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tallgrass Institute">
+  <meta name="keywords" content="best training institute in ameerpet,java training institute,...">
+  <meta name="author" content="chanti">
+  <meta http-equiv="refresh" content="5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+
+
+
+
+Setting The Viewport:
+==================
+HTML5 introduced a method to let web designers take control over the viewport, 
+through the <meta> tag.
+
+The viewport is the user's visible area of a web page. 
+
+It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+You should include the following <meta> viewport element in all your web pages:
+
+syntax:
+-----------
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+A <meta> viewport element gives the browser instructions on how to control the
+ page's dimensions and scaling.
+
+The "width=device-width" part sets the width of the page to follow the 
+screen-width of the device (which will vary depending on the device).
+
+The "initial-scale=1.0" part sets the initial zoom level when the page is first loaded by the browser.
