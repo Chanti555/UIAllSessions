@@ -1,0 +1,108 @@
+Bootstrap Grid System:
+================
+Grid Classes:
+=========
+.xs 	(for phones - screens less than 768px wide)
+.sm 	(for tablets - screens equal to or greater than 768px wide)
+.md 	(for small laptops - screens equal to or greater than 992px wide)
+.lg 	(for laptops and desktops - screens equal to or greater than 1200px wide)
+syntax to use grid system:
+--------------------------------
+<div class="row">
+  	<div class="col-*-*"></div>
+  	<div class="col-*-*"></div>
+</div>
+______________________________________________________________________
+1.Responsive Text:(typography)
+2.Responsive Lists:
+3.Responsive Images:
+4.Responsive table:
+5.Responsive Button:
+
+6.Responsive Form & Items:
+=====================
+Bootstrap Form Layouts:
+-------------------------------
+Bootstrap provides three types of form layouts:
+
+1.Vertical form (this is default)
+2.Horizontal form
+3.Inline form
+
+Refer Laouts folder pictures & draw in ur book
+
+
+Basic code without any Bootstrap classes:
+==============================
+<form>
+	<label>Name:	</lable>
+	<input type="text">
+	<label>Mail:	</lable>
+	<input type="email">
+	<input type="submit">
+</form>
+
+
+Form related classes:
+===============
+.form-group			:<form>
+.form-control		:<input type="text">,<input type="dob">
+
+
+1.Vertical form (this is default)
+
+	Refer ex1.html
+
+2.Horizontal form:
+-----------------------
+A horizontal form means that the labels are aligned next to the input field (horizontal) 
+on large and medium screens. On small screens (767px and below), it will transform to 
+a vertical form (labels are placed on top of each input).
+
+Additional rules for a horizontal form:
++++++++++++++++++++++++++++
+Add class .form-horizontal to the <form> element
+Add class .control-label to all <label> elements
+
+Note:
+++++
+Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout.
+
+	Refer ex2.html
+
+
+3.Inline form:
+------------------
+In an inline form, all of the elements are inline, left-aligned, and the labels are alongside.
+
+Note: This only applies to forms within viewports that are at least 768px wide!
+
+Additional rule for an inline form:
+++++++++++++++++++++++++
+Add class .form-inline to the <form> element
+
+	Refer ex3.html
+
+
+glyphicons:
+=========
+syntax:
+	<span class="glyphicon glyphicon-name"></span>
+site:
+https://www.glyphicons.com/
+
+
+	Refer ex4.html
+
+
+
+
+
+
+
+
+
+
+
+
+
