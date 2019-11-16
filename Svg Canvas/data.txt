@@ -1,0 +1,48 @@
+The HTML5 introduced the two graphical elements
+Canvas and SVG for creating rich graphics on the web, but they are fundamentally different. 
+Canvas:
+======
+1.can used for drawing.
+2.<canvas> element is just a container for graphics 
+3.use a script to actually draw the graphics.
+
+Whenever you want to use a <canvas> it is recommended to set the following attributes:
+
+id	: you need to set some id in order to be able to access and reference the canvas from JavaScript.
+width	: needed for defining the size of the canvas
+height	:needed for defining the size of the canvas
+
+Syntax:
+	<canvas id="myCanvas" width="200" height="200"></canvas>
+Key points:
+---------------
+Resolution dependent , i.e looks in different way in each resolution
+No support for event handlers
+Poor text rendering capabilities
+You can save the resulting image as .png or .jpg
+Recommended and well suited for graphic-intensive games
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ SVG:
+=====
+	SVG stands for Scalable Vector Graphics
+	SVG is used to define graphics for the Web
+	The HTML <svg> element is a container for SVG graphics.
+	SVG has several methods for drawing boxes, circles, text, and graphic images.
+	SVG is a language for describing 2D graphics in XML.
+
+Key points:
+---------------
+1.Resolution independent , i.e looks in the same way in different resolutions
+2.Best suited for applications with large rendering areas (Maps for example)
+3.Slow rendering if complex (anything that uses the DOM a lot will be slow)
+4.Not suited for game applications
+5.SVG images are scalable and zoomable (and the image can be zoomed without degradation)
+

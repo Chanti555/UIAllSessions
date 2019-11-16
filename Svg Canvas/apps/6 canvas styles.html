@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Filling Color inside a Rectangle</title>
+<style type="text/css">
+	canvas{
+		border: 1px solid #000;
+	}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.rect(50, 50, 200, 100); 
+        context.fillStyle = "#FB8B89";
+        context.fill();
+        context.lineWidth = 5;
+        context.strokeStyle = "black";
+        context.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>                            

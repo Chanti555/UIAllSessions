@@ -1,0 +1,21 @@
+<html ng-app>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body bgcolor="yellow" text="red">
+   <div>
+        Name:<input type="text" id="t1" onkeyup="fun1()"><br>
+        Ur Name is:<span id="s1"></span>
+   </div>
+   <div>
+        Name: <input type="text" ng-model="t2"><br>
+        Ur Name is: <span ng-bind="t2"></span>
+   </div>
+   <script>
+       function fun1()
+       {
+           document.getElementById('s1').innerHTML=document.getElementById('t1').value;
+       }
+   </script>
+</body>
+</html>

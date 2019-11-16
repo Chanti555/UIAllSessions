@@ -1,0 +1,21 @@
+<html ng-app>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body bgcolor="yellow" text="red">
+   <div>
+       Add: <span id="s1">0</span>
+   </div>
+
+   <div ng-init="a=100;b=50;c=a-b;">
+        Sub: <span ng-bind="c"></span>,<br> {{c}}
+    </div>
+    
+   <script>
+       var x=10,y=20;
+       var z=x+y;
+       document.getElementById('s1').innerHTML=z;
+       document.write(z);
+   </script>
+</body>
+</html>
