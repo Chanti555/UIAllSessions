@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Basic Program2 to understand Preparation of all Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+       //Step1:
+       var app1=angular.module('M1',[]);
+       //Step2:
+       app1.controller('C1',function($scope)
+       {
+           //All DataTypes in JS
+           $scope.rollno=501;
+           $scope.height=5.7;
+           $scope.name='Sanjay';
+           $scope.marital=true;
+           $scope.country=undefined;
+           //array
+           $scope.hobbies=['Cricket','Chess','Swimming'];
+            //object
+            $scope.address={hno:202,city:'Hyd',pin:500016};
+       });
+    </script>
+</head>
+<body>
+      <div ng-app='M1' ng-controller='C1'>
+                RollNo={{rollno}}  <br>
+                Height={{height}}  <br>
+                Name={{name}}  <br>
+                Marital Status={{marital}}  <br>
+                Country={{country}}  <br>
+                Hobbies={{hobbies}} <br>
+                Address={{address}}
+      </div>
+</body>
+</html>

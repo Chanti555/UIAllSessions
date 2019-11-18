@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Basic Program to understand ng-model</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app>
+      <div>
+          <h1>One Way Binding</h1>
+          <div style="background-color:yellow;">
+            <h3>Template Data(Model)</h3>
+                First Name:<input type="text" ng-model="name1"> <br>
+                 Last Name:<input type="text" ng-model="name2"> <br>
+            </div>
+           <div style="background-color:silver;">
+                <h3>View Data</h3>
+                FullName:<p ng-bind='name1+name2'></p>
+           </div>
+      </div>
+</body>
+</html>

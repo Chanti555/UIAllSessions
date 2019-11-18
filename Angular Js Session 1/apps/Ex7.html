@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Basic Program1 to understand Module & Controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        //Step1:Create a module
+        var app1=angular.module('m1',[]);
+        //Step2:Creating controller
+        app1.controller('c1',function($scope)
+        {
+            //Data 
+            $scope.myname='Chanti';
+            //+ Functions
+        });
+    </script>
+</head>
+<body>
+      <div ng-app='m1' ng-controller='c1'>
+            Ur Name is:{{myname}}
+      </div>
+</body>
+</html>

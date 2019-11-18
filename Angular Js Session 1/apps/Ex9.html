@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Basic Program2 to understand Preparation of Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app1=angular.module('mod1',[]);
+        app1.controller('mycontr1',function($scope)
+        {
+            $scope.sayHi=function()
+            {
+                return 'Hi Chanti';
+            }
+        });
+        app1.controller('mycontr2',function($scope)
+        {
+            $scope.sayBye=function()
+            {
+                return 'Bye Chanti';
+            }
+        });
+    </script>
+</head>
+<body ng-app='mod1'>
+      <div  ng-controller='mycontr1'>
+               {{sayHi()}}
+      </div>
+      <div  ng-controller='mycontr2'>
+            {{sayBye()}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+Session1:
+========
+AngularJS:
+========
+It is a JavaScript-based open-source front-end web framework.
+Mainly maintained by Google and by a community of individuals and corporations to 
+address many of the challenges encountered in developing Single-Page Applications.
+
+AngularJS History:
+--------------------------
+AngularJS version 1.0 was released in 2012.
+Misko Hevery, a Google employee, started to work with AngularJS in 2009.
+The idea turned out very well, and the project is now officially supported by Google.
+
+Stable release	: 1.7.8 / March 11, 2019
+Developed by	: Google
+Initial release	: October 20, 2010
+License		: MIT License
+Written in	: JavaScript
+Platform		: JavaScript engine
+Website		: https://angularjs.org/
+
+What You Should Already Know:
+-----------------------------------------------
+Before you study AngularJS, you should have a basic understanding of:
+HTML
+CSS
+JavaScript
+
+Note:
+====
+1.AngularJS is a JavaScript framework. 
+2.It can be added/installed to an HTML page with a <script> tag.
+3.AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.
+4.Add following CDN to use AngularJs
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+5.AngularJS Extends HTML
+
+AngularJS extends HTML with ng-directives.
+
+5.1 ng-app directive defines an AngularJS application.
+
+5.2 ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+5.3 ng-bind directive binds application data to the HTML view.
+
+5.4 ng-init directive initializes AngularJS application variables.
+
+5.5  Expressions are written inside double braces: {{ expression }}.
+________________________________________________________________________
+
+
+Session2:
+=======
+Working with AngularJS Module & AngularJS Controller:
+===============================================
+AngularJS Module:
++++++++++++++++
+An AngularJS module defines an application.
+The module is a container for the different parts of an application.
+The module is a container for the application controllers.
+Controllers always belong to a module.
+
+AngularJS Controllers:
++++++++++++++++++
+AngularJS controllers control the data of AngularJS applications.
+AngularJS controllers are regular JavaScript Objects(D+F).
+
+
+1.syntax to create  AngularJS Module:
+------------------------------------------
+var appvar = angular.module('AppName', []);
+
+2..syntax to create  AngularJS Controller:
+----------------------------------------------------
+appvar.controller('ControllerName', function($scope)
+{
+ 	//Data
+	+
+	//Functions
+});
+
+
+3.Adding module & controller with in application:
+-------------------------------------------------------------------------
+<tagname	ng-app="AppName"	ng-controller="ControllerName">
+	
+</tagname>
+
+
+
+
+
+
+
+
+
+
+

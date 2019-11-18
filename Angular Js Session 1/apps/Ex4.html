@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Basic Program to understand ng-init and ng-bind</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app>
+      <div ng-init="a=10;b=20;c=a+b;d='Sum is:';">
+            {{d+c}}<br>
+           a =<span ng-bind='a'></span>  <br>
+           b=<b ng-bind='b'></b>   <br>
+           c=<i ng-bind='c'></i>
+      </div>
+</body>
+</html>

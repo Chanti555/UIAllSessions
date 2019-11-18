@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Basic Program to understand One Way Binding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app>
+      <div>
+          <h1>One Way Binding</h1>
+          <div style="background-color:yellow;">
+               USD:<input type="number" ng-model="usd">
+            </div>
+           <div style="background-color:silver;">
+               ISD:{{usd*70}}
+           </div>
+      </div>
+</body>
+</html>
