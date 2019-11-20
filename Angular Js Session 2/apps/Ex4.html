@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>ng-repeat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script>
+        var app1=angular.module('m1',[]);
+        app1.controller('c1',function($scope)
+        {
+            $scope.names=['Jani','Hege','Kai'];
+            $scope.persons=[{name:'Jani',country:'Norway'},
+                                    {name:'Hege',country:'Sweden'},
+                                    {name:'Kai',country:'Denmark'}];
+        });
+   </script>
+</head>
+<body ng-app='m1' ng-controller='c1'>
+        <div>
+                <ul>
+                     <li ng-repeat="i in names">
+                                    {{ i }}
+                        </li>
+                </ul>
+        </div>
+        <div>
+          <ul>
+            <li ng-repeat="i in persons">
+                {{ i.name + ', ' + i.country }}
+             </li>
+        </ul>
+        </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Two way binding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+    var app1=angular.module('m1',[]).controller('c1',function($scope)
+    {
+        //Data
+        $scope.num1=100;
+        $scope.num2=200;
+        //Function
+        $scope.sum=function()
+        {
+            return ($scope.num1+$scope.num2);
+        }
+    });
+    </script>
+</head>
+<body ng-app='m1'>
+    <div ng-controller='c1'>
+        <h1>Two way binding</h1>
+       Number1: <input type="number" ng-model='num1'> <br>
+       Number2: <input type="number" ng-model='num2'> <br>
+       {{num1}} and {{num2}} addition is:{{sum()}}
+    </div>
+</body>
+</html>

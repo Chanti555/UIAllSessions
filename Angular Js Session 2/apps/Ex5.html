@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>ng-repeat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script>
+        var app1=angular.module('m1',[]);
+        app1.controller('c1',function($scope)
+        {
+            $scope.names=['Jani','Hege','Kai'];
+            $scope.persons=[{name:'Jani',image:'1.jpg'},
+                                        {name:'Ali',image:'2.jpg'}];
+        });
+   </script>
+</head>
+<body ng-app='m1' ng-controller='c1'>
+        <div>
+               <table border="1">
+                       <tr><th>NAMES</th></tr>
+                       <tr ng-repeat='x in names'>
+                                <td>{{x}}</td>
+                       </tr>
+               </table>
+        </div>
+        <div>
+                <table border="2">
+                        <tr>
+                                <th>Name</th><th>Image</th>
+                        </tr>
+                        <tr ng-repeat='x in persons'>
+                                <td>{{x.name}}</td>
+                                <td>
+                                        <img src="{{x.image}}" alt='NotFound' height="50px" width="50px">
+                                </td>
+                        </tr>
+                </table>
+        </div>
+</body>
+</html>

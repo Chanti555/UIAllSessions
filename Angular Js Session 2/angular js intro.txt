@@ -1,0 +1,24 @@
+What is AngularJS:
+AngularJS History:
+What You Should Already Know:
+How ti install AngularJS
+AngularJS directives.
+5.1 ng-app directive defines an AngularJS application.
+5.2 ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+5.3 ng-bind directive binds application data to the HTML view.
+5.4 ng-init directive initializes AngularJS application variables.
+5.5  Expressions are written inside double braces: {{ expression }}.
+5.6 ng-controller is used to add controller into view
+5.7 ng-module is used to add Module to view
+________________________________________________________________________
+Preparation of functions inside controller:
+==============================
+
+
+
+
+
+
+
+
+

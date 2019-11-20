@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Events in angularjs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script>
+        var app1=angular.module('m1',[]);
+        app1.controller('c1',function($scope)
+        {
+                $scope.sayHello=function()
+                {
+                        alert('Hello Angular Event');
+                }
+        });
+        function sayHi()
+        {
+                alert('Hi  Javascript Event');
+        }
+   </script>
+</head>
+<body ng-app='m1' ng-controller='c1'>
+        <button onclick="sayHi()">Click to SayHi</button>
+        <button ng-click="sayHello()">Click to SayHello</button>
+</body>
+</html>

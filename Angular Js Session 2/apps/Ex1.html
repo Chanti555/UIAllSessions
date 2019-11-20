@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Preparation of functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+    var app1=angular.module('m1',[]).controller('c1',function($scope)
+    {
+        $scope.sum=function(x,y)
+        {
+            return (x+y);
+        }
+    });
+    </script>
+</head>
+<body ng-app='m1'>
+    <div ng-controller='c1'>
+        Addition of 10 & 20 is:{{sum(10,20)}}
+    </div>
+</body>
+</html>
