@@ -1,0 +1,69 @@
+Different ways to prepare functions in TypeScript:
+=============================================
+1.Using function declaration  :Use function keyword
+2.Using function expression/labmda/anonymous
+3.Using arrow function
+4.Using IIFE 
+__________________________________________________________
+1.Using function declaration  :
+Refer Ex1.ts
+2.Using function expression  :
+Refer Ex2.ts
+3.Using arrow function
+syntax:
+------------
+called function:
+++++++++++++++
+let functionaname=(parameterlist)=>
+{
+    //body
+};
+calling function:
+++++++++++++++
+functionaname(parameterlist);
+Ex:
+Refer Ex3.ts
+
+4.Using IIFE(Immidiate Invoked Function Expression):
+================================================
+For every function we have to write 2 syntaxes separately
+1.Called Function
+2.Calling Function
+In IIFE, Calling & Called functions are writtern together.
+This type of functions gets executed as soon as JS engines reach to that lines.
+Ex:
+Refer Ex4.ts
+____________________________________________________
+Template Literals:
+-------------------------------
+JS/TS allow to prepare string in single & double quotes.
+In TS, with in strings we can bind variable values using Back Tics(`) called as Template Literals.
+
+Refer:Ex5.ts
+____________________________________________________
+Array preparation in JavaScript & TypeScript
+
+Refer:Ex6.ts
+____________________________________________________
+Spread Operator(...):
+===================
+Used in 2 ways
+1.Used to join 2 or more arrays
+2.Used to accept multi variables in single format parameters
+
+Usage1 in arrays: Ex7.ts
+Usage2 in functions:Ex8.ts  (Rest parameter)
+____________________________________________________
+Default Arguments:
+=================
+Generally calling function actual parameters are assigned to called function 
+formal parameterlist.
+In Default Arguments, we can assign values to formal parameterlist their itslef. 
+So that if we doesn't pass actual parameters then Default Arguments can be used.
+
+Refer:Ex9.ts
+____________________________________________________
+const keyword:
+==============
+Used to declare fixed values to variables
+Refer:Ex10.ts
